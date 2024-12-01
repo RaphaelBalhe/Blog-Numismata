@@ -151,7 +151,34 @@ footer {
     border-radius: 8px;
     width: 400px;
     text-align: center;
+    max-width: 90%;
 }
+
+
+.modal-content p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.modal-content p a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.modal-content p a:hover {
+    text-decoration: underline;
+}
+
+.modal-content form label,
+.modal-content form input {
+    display: block;
+    width: 100%;
+   
+    margin-bottom: 10px;
+  
+}
+
+
 
 .close {
     color: #aaa;

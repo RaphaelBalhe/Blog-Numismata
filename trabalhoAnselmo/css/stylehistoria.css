@@ -34,7 +34,8 @@ nav a {
 
 .container {
     padding: 20px;
-    margin-top: 60px; /* Adicionando margem superior para evitar conflito com o header */
+    margin-top: 60px;
+    /* Adicionando margem superior para evitar conflito com o header */
 }
 
 .logo {
@@ -65,9 +66,11 @@ nav a {
     margin-bottom: 15px;
 }
 
-h1, h2{
+h1,
+h2 {
     color: #333;
 }
+
 footer {
     background-color: #000;
     color: #fff;
@@ -76,14 +79,69 @@ footer {
     margin-top: 20px;
 }
 
+.modal {
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+    max-width: 90%;
+}
+
+
+.modal-content p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.modal-content p a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.modal-content p a:hover {
+    text-decoration: underline;
+}
+
+
+.close {
+    color: #aaa;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+}
+
 @media (max-width: 500px) {
     .container {
         width: 90%;
-        margin-top: 80px; /* Ajuste a margem superior para dispositivos móveis */
+        margin-top: 80px;
+        /* Ajuste a margem superior para dispositivos móveis */
     }
 
     .logo {
         width: 70%;
     }
 }
-
